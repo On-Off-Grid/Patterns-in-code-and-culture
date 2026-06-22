@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patterns in Code and Culture</title>
+    <meta name="description"
+        content="Patterns in Code and Culture — Notes of a Self-Aware Engineer exploring AI, systems, society, and agriculture." />
+
+    <!--
+    FONT LOADING
+    - Zodiak: gives the headings a more reflective/editorial feeling.
+    - Satoshi: keeps paragraphs and UI text clean and readable.
+  -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- External stylesheet: easier to learn, edit, and grow over time. -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+    <!--
+    SKIP LINK
+    Helps keyboard users jump directly to the main content.
+  -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- =========================================================
+       1. SITE HEADER
+       - Brand / site title
+       - Navigation
+       - Theme toggle (light / dark)
+     ========================================================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#hero" aria-label="Patterns in Code and Culture home">
+                <span class="brand-mark" aria-hidden="true">◧</span>
+                <span class="brand-text-wrap">
+                    <span class="brand-title">Patterns in Code and Culture</span>
+                    <span class="brand-subtitle">Notes of a Self-Aware Engineer</span>
+                </span>
+            </a>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#pillars">Pillars</a>
+                <a href="#starting-point">Starting point</a>
+            </nav>
+
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+                <span aria-hidden="true">◐</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <article class="post-layout">
+            <div class="container">
+                <header class="post-header">
+                    <p class="section-label">Article</p>
+                    <p class="post-meta">June 2026 • Beyond the herd</p>
+                    <h1>Who Are We?</h1>
+                    <p class="post-summary">
+                        A reflection on the scientific and Qur’anic stories of human origins, and on how the
+                        question of where we come from turns into the question of what we are becoming.
+                    </p>
+                </header>
+
+                <section class="post-content">
+                    <p>
+                        I used to think the question <strong>“Who are we?”</strong> could be answered by choosing
+                        one story and rejecting the others. I spent years trying to understand where we fit in
+                        the universe, and why the answers always seem to split into competing stories. One story
+                        speaks the language of atoms, fossils, and cosmic time; another speaks of Adam,
+                        revelation, purpose, and divine wisdom. For a long time I felt forced to choose between
+                        them. Now I wonder whether the deeper question is not which one is true enough to survive,
+                        but what each one is actually trying to reveal about us.
+                    </p>
+
+                    <h2>A small disclaimer</h2>
+                    <p>
+                        Before we go any further, a small disclaimer: both the scientific and Islamic stories I
+                        mention here have many branches, debates, and details. Astronomers disagree about aspects
+                        of cosmology; Muslim scholars differ on how exactly to read some verses about creation and
+                        Adam. This article is neither an attempt to win a debate nor a full map of those
+                        disagreements. It is an attempt to step back, look at the broader picture, and an
+                        invitation for you to start your own journey into the details that matter most to you.
+                    </p>
+
+                    <h2>The scientific timeline</h2>
+                    <p>
+                        Before any scripture is read, the cosmos already seems to be speaking in its own language
+                        of time — the scientific lens takes us into a history measured not in generations, but in
+                        millions and billions of years by looking at fossils, stars, and genetic evidence.
+                        Current cosmology places the universe at about <strong>13.8 billion years old</strong><sup
+                            id="ref-6"><a href="#source-6">[6]</a></sup>,
+                        beginning from an extremely hot and dense early state. As the universe cools and
+                        structures form, the story narrows from galaxies to planets, and from planets to traces
+                        of humanity emerging from stone and bone.
+                    </p>
+
+                    <p>
+                        One of the most important of those traces was found at <strong>Jebel Irhoud</strong><sup
+                            id="ref-1"><a href="#source-1">[1]</a></sup>
+                        in Morocco, where fossils of early <em>Homo sapiens</em> pushed our species' history much
+                        deeper into the past than many had imagined.
+                    </p>
+
+                    <p>
+                        The scientific story of <em>Homo sapiens</em> is not a story of simple “caveman”
+                        becoming modern people overnight. It is a long history of gradual change: stone tools,
+                        fire, hunting strategies, migration, symbolic behavior, and eventually agriculture and
+                        settled life. In that timeline, our species appears not as instantly complete in every
+                        sense, but as developing over time through a long process of adaptation and culture.<sup
+                            id="ref-2"><a href="#source-2">[2]</a></sup><sup id="ref-3"><a
+                                href="#source-3">[3]</a></sup>
+                    </p>
+
+                    <p>
+                        In that sense, the scientific timeline presents humanity as <strong>unfolding over
+                            time</strong>, rather than arriving all at once in a fully articulated form. This slow
+                        biological and cultural unfolding raises a deeper question: <em>is the first fully
+                            responsible human in the Qur'anic sense the same thing as the first anatomically modern
+                            human in the scientific sense?</em>
+                    </p>
+
+                    <h2>The Qur’anic timeline of Adam</h2>
+                    <p>
+                        Classical Muslim sources generally describe <strong>Adam</strong> as a unique,
+                        miraculously created human being, formed from dust or clay and then given a spirit by
+                        God, not as the biological child of human parents.<sup id="ref-4a"><a
+                                href="#source-4">[4]</a></sup>
+                    </p>
+
+                    <p>
+                        These texts<sup id="ref-4b"><a href="#source-4">[4]</a></sup> also present Adam as the first
+                        in a chain of human beings — <em>“the father of humanity”</em> — from whom later people
+                        are called <em>“children of Adam.”</em> Within this framework, many scholars read verses
+                        such as <em>“Indeed, the example of Jesus in the sight of Allah is like that of Adam. He
+                            created him from dust, then said to him, ‘Be!’ And he was!”</em> (Qur'an 3:59) as
+                        implying that Adam, like Jesus, has an origin that cannot be reduced to ordinary
+                        biological ancestry.
+                    </p>
+
+                    <p>
+                        I am not the first person to ask whether Adam's story might begin inside a much older
+                        human species. Muslim scholars such as <strong>Shoaib Ahmed Malik</strong> have begun to
+                        explore this question in detail, arguing that, within a classical Ashʿarī framework, it
+                        is possible to accept a long evolutionary history while still holding that Adam's own
+                        origin and role are unique.<sup id="ref-4c"><a href="#source-4">[4]</a></sup>
+                    </p>
+
+                    <h2>The bridge</h2>
+                    <p>
+                        Seen side by side, the scientific and Qur'anic stories are not talking about exactly the
+                        same layer of reality. The scientific account follows bodies and cultures across deep
+                        time: when <em>Homo sapiens</em> appears in the fossil record, when tools and fire and
+                        agriculture emerge. The Qur'anic account begins when a particular human is created,
+                        taught, and addressed by God, and when a moral and prophetic history starts. One story
+                        asks mainly <strong>how</strong> a certain kind of creature unfolded; the other asks
+                        <strong>when</strong> a certain kind of responsibility and relationship with the Creator
+                        began.
+                    </p>
+
+                    <p>
+                        Yet both stories, in their own language, describe a movement from raw material to higher
+                        order. Dust becomes stars and planets; dust becomes Adam's body. Life gradually becomes
+                        capable of symbolic language and culture; Adam is taught the names and made a
+                        <strong>vicegerent (khalīfah)</strong>. For me the question is not which story must erase
+                        the other, but whether we can learn to read them together <em>without pretending they are
+                            saying exactly the same thing</em>.
+                    </p>
+
+                    <h2>What is all of this for?</h2>
+                    <p>
+                        Once we have two timelines on the table, a deeper question appears: <strong>what is all
+                            of this for?</strong> A universe billions of years old, a species unfolding over hundreds
+                        of thousands of years, a prophetic story beginning with Adam — none of this really matters
+                        unless we ask what kind of life these stories are inviting us into.
+                    </p>
+
+                    <p>
+                        Some people, including many thoughtful agnostics and atheists, answer this by saying
+                        there is <strong>no built-in purpose</strong> at all. The universe just is<sup id="ref-7"><a
+                                href="#source-7">[7]</a></sup>,
+                        life is a temporary pattern in matter, and any meaning we have is something we create for
+                        ourselves before we die. From this angle, talking about an afterlife or divine plan feels
+                        like a comforting story we tell to avoid facing the finality of death.
+                    </p>
+
+                    <p>
+                        The scientific timeline itself doesn't tell us whether there is any purpose beyond
+                        survival and whatever meaning we choose to create. It can describe how long stars burn,
+                        when <em>Homo sapiens</em> appears, and how civilizations rise and fall, but it stays
+                        silent about whether any of this is “for” something.
+                    </p>
+
+                    <p>
+                        Contrastingly, the <strong>Qur'anic vision</strong>, which I was raised with and keep
+                        returning to, sees things differently. It speaks of a deliberate creation, of humans being
+                        tested, of an afterlife in which hidden realities and intentions are revealed, and a life
+                        here as a brief passage in a larger journey. In that view our timeline — whether measured
+                        in thousands or billions of years — is not a closed loop but a <strong>corridor</strong>.
+                    </p>
+
+                    <p>
+                        I won't pretend to be neutral here. I do not see life as a movie that simply ends with
+                        the credits of death. For me, the idea that we are created, tested, and then brought back
+                        to life for a final clarity about our actions makes more sense than the idea that all of
+                        this complexity is an accident with no further horizon. But I also know that this is a
+                        conviction I hold as a believer; it is not something a microscope can prove or disprove.
+                    </p>
+
+                    <h2>From “Who are we?” to “What am I becoming?”</h2>
+                    <p>
+                        If the Islamic story is right that we are created with a purpose and will be held
+                        accountable, then the question <strong>“Who are we?”</strong> immediately becomes
+                        <strong>“What kind of person am I becoming?”</strong> This is where the neglected language
+                        of <em>tazkiyah</em> — purifying the self (soul), not just informing the mind — comes back
+                        in. The point is not just to map our timeline, but to shape our character along it.
+                    </p>
+
+                    <p>
+                        For me the real value of putting these stories side by side is not to decide which camp we
+                        belong to, but to notice what kind of <strong>human</strong> each story is asking us to
+                        become. If there is a Creator and an afterlife, then the timeline is not just information;
+                        rather a context for responsibility and inner work. If there is not, then we still have to
+                        decide what kind of life is worth living inside a finite universe. Either way, the
+                        question returns to the self.
+                    </p>
+
+                    <p>
+                        I cannot walk that journey for anyone else. My hope in writing this is simply to offer one
+                        pattern that helped me: to see the scientific story as describing <strong>how</strong> our
+                        bodies and world unfolded, and the Qur'anic story as describing <strong>when</strong> our
+                        moral and spiritual story begins — and then ask, very personally, <em>what kind of heart
+                            I am bringing to both</em>.
+                    </p>
+
+                    <h2>Questions to contemplate</h2>
+                    <ul class="post-questions">
+                        <li>Was the universe with its depth and complexities created by chance and without a purpose?
+                        </li>
+                        <li>What story about the universe and humanity do I actually live by, not just repeat with my
+                            mouth?</li>
+                        <li>How does that story shape the way I treat knowledge, other people, and my own mistakes?</li>
+                        <li>If I discovered tomorrow that some parts of my picture were wrong, am I more attached to
+                            being right or to being honest?</li>
+                    </ul>
+
+                    <h2>Footnotes</h2>
+                    <ul class="post-footnotes">
+                        <li>
+                            I prefer a description of the early universe that avoids the image of a simple explosion
+                            from a single point, since that shorthand can mislead readers about what cosmology
+                            actually means. As Henry Reich prefers to call it <strong>“The Everywhere Stretch”</strong>
+                            rather than <strong>“Big Bang”</strong>, if you're interested here's the full video where
+                            he discusses it in depth.<sup id="ref-5"><a href="#source-5">[5]</a></sup>
+                        </li>
+                        <li>
+                            Recent work by <strong>Shoaib Ahmed Malik</strong> surveys several Sunni approaches to
+                            evolution and argues that, within an Ashʿarī framework inspired by al‑Ghazālī, Muslims
+                            can allow a long evolutionary history while still affirming a special, miraculous origin
+                            for Adam.<sup id="ref-4d"><a href="#source-4">[4]</a></sup>
+                        </li>
+                        <li>
+                            There are several models and open questions about cosmology (about dark matter, dark
+                            energy, and early-universe physics). I'm using the standard <strong>13.8 billion
+                                year</strong>
+                            picture as a working summary rather than a dogma.<sup id="ref-6b"><a
+                                    href="#source-6">[6]</a></sup>
+                        </li>
+                        <li>
+                            Muslim scholars have disagreed for centuries about the exact details of Adam's creation
+                            and how to read certain verses and hadith. Recent work explores positions from strict
+                            creationism to <strong>“Adamic exceptionalism”</strong> and beyond; my goal here is only
+                            to sketch the main shape, not to resolve every disagreement.<sup id="ref-4e"><a
+                                    href="#source-4">[4]</a></sup>
+                        </li>
+                    </ul>
+
+                    <h2>Appendix (sources)</h2>
+                    <ol class="post-sources">
+                        <li id="source-1">
+                            <a href="https://humanorigins.si.edu/research/whats-hot-human-origins/our-species-arose-least-300000-years-ago"
+                                target="_blank" rel="noopener noreferrer">
+                                [1] Smithsonian Human Origins — Our species arose at least 300,000 years ago
+                            </a>
+                            <a href="#ref-1" class="back-link" aria-label="Back to citation 1">↩</a>
+                        </li>
+                        <li id="source-2">
+                            <a href="https://www.smithsonianmag.com/science-nature/essential-timeline-understanding-evolution-homo-sapiens-180976807/"
+                                target="_blank" rel="noopener noreferrer">
+                                [2] Smithsonian Magazine — Essential timeline for understanding the evolution of Homo
+                                sapiens
+                            </a>
+                            <a href="#ref-2" class="back-link" aria-label="Back to citation 2">↩</a>
+                        </li>
+                        <li id="source-3">
+                            <a href="https://www.cambridge.org/core/books/abs/human-evolution-beyond-biology-and-culture/prehistory-until-the-rise-of-agriculture/E13E1CB38982EC60EAFFF4E70BFFFF6A"
+                                target="_blank" rel="noopener noreferrer">
+                                [3] Cambridge — Prehistory until the rise of agriculture
+                            </a>
+                            <a href="#ref-3" class="back-link" aria-label="Back to citation 3">↩</a>
+                        </li>
+                        <li id="source-4">
+                            <a href="https://archive.org/details/islam-and-evolution-al-ghazali-and-the-modern-evolutionary-paradigm_202401/page/94/mode/1up"
+                                target="_blank" rel="noopener noreferrer">
+                                [4] Islam and Evolution — al-Ghazālī and the modern evolutionary paradigm
+                            </a>
+                            <a href="#ref-4a" class="back-link" aria-label="Back to citation 4">↩</a>
+                        </li>
+                        <li id="source-5">
+                            <a href="https://www.youtube.com/watch?v=q3MWRvLndzs" target="_blank"
+                                rel="noopener noreferrer">
+                                [5] Henry Reich — The Everywhere Stretch
+                            </a>
+                            <a href="#ref-5" class="back-link" aria-label="Back to citation 5">↩</a>
+                        </li>
+                        <li id="source-6">
+                            <a href="https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-big-bang/"
+                                target="_blank" rel="noopener noreferrer">
+                                [6] NASA Hubble — Science behind the discoveries: Big Bang
+                            </a>
+                            <a href="#ref-6" class="back-link" aria-label="Back to citation 6">↩</a>
+                        </li>
+                        <li id="source-7">
+                            <a href="https://plato.stanford.edu/entries/cosmological-argument/#Obje1UnivJust"
+                                target="_blank" rel="noopener noreferrer">
+                                [7] Stanford Encyclopedia of Philosophy — Cosmological argument
+                            </a>
+                            <a href="#ref-7" class="back-link" aria-label="Back to citation 7">↩</a>
+                        </li>
+                    </ol>
+                </section>
+
+                <footer class="post-footer">
+                    <p class="section-text">
+                        Filed under: <a href="../pillars.html">Beyond the herd</a>
+                    </p>
+                </footer>
+            </div>
+        </article>
+    </main>
+
+    <!-- =========================================================
+       6. FOOTER
+       - Small closing statement.
+       - Can later hold social links, email, newsletter, or copyright.
+     ========================================================= -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Patterns in Code and Culture — Notes of a Self-Aware Engineer.</p>
+            <p>Built as a homepage draft meant to evolve over time.</p>
+        </div>
+    </footer>
+
+    <script>
+        /*
+          SIMPLE THEME TOGGLE
+          - Uses an in-memory variable only.
+          - No localStorage, so it stays compatible in sandboxed environments.
+        */
+        (function () {
+            const root = document.documentElement;
+            const toggle = document.querySelector('[data-theme-toggle]');
+            let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+            root.setAttribute('data-theme', theme);
+
+            toggle.addEventListener('click', function () {
+                theme = theme === 'dark' ? 'light' : 'dark';
+                root.setAttribute('data-theme', theme);
+            });
+        }());
+    </script>
+</body>
+
+</html>
