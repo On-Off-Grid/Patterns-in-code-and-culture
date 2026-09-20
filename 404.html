@@ -3,35 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Patterns in Code and Culture</title>
+  <title>404 — Page Not Found</title>
   <meta
     name="description"
-    content="Patterns in Code and Culture — Notes of a Self-Aware Engineer exploring AI, systems, society, and agriculture."
+    content="Page not found — Patterns in Code and Culture"
   />
 
-  <!--
-    FONT LOADING
-    - Zodiak: gives the headings a more reflective/editorial feeling.
-    - Satoshi: keeps paragraphs and UI text clean and readable.
-  -->
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap" rel="stylesheet" />
-
-  <!-- External stylesheet: easier to learn, edit, and grow over time. -->
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
-  <!--
-    SKIP LINK
-    Helps keyboard users jump directly to the main content.
-  -->
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- =========================================================
-       1. SITE HEADER
-       - Brand / site title
-       - Navigation
-       - Theme toggle (light / dark)
-     ========================================================= -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="Patterns in Code and Culture home">
@@ -57,14 +40,19 @@
   </header>
 
   <main id="main-content">
-   /*pitstop*/
+    <section class="section">
+      <div class="container section-intro">
+        <div>
+          <p class="section-label">404 Error</p>
+          <h1>Page not found</h1>
+        </div>
+        <p class="section-text">
+          The requested page does not exist or has moved. Return to the <a href="/">homepage</a> or check the <a href="/blog.html">blog archive</a>.
+        </p>
+      </div>
+    </section>
   </main>
 
-  <!-- =========================================================
-       6. FOOTER
-       - Small closing statement.
-       - Can later hold social links, email, newsletter, or copyright.
-     ========================================================= -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>Patterns in Code and Culture — Notes of a Self-Aware Engineer.</p>
@@ -73,11 +61,6 @@
   </footer>
 
   <script>
-    /*
-      SIMPLE THEME TOGGLE
-      - Uses an in-memory variable only.
-      - No localStorage, so it stays compatible in sandboxed environments.
-    */
     (function () {
       const root = document.documentElement;
       const toggle = document.querySelector('[data-theme-toggle]');

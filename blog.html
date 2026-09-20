@@ -17,24 +17,14 @@
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap" rel="stylesheet" />
 
   <!-- External stylesheet: easier to learn, edit, and grow over time. -->
-  <link rel="stylesheet" href="./patterns-in-code-and-culture-styles.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
-  <!--
-    SKIP LINK
-    Helps keyboard users jump directly to the main content.
-  -->
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- =========================================================
-       1. SITE HEADER
-       - Brand / site title
-       - Navigation
-       - Theme toggle (light / dark)
-     ========================================================= -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#hero" aria-label="Patterns in Code and Culture home">
+      <a class="brand" href="/" aria-label="Patterns in Code and Culture home">
         <span class="brand-mark" aria-hidden="true">◧</span>
         <span class="brand-text-wrap">
           <span class="brand-title">Patterns in Code and Culture</span>
@@ -43,9 +33,11 @@
       </a>
 
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#pillars">Pillars</a>
-        <a href="#starting-point">Starting point</a>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/pillars.html">Pillars</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/now.html">Now</a>
       </nav>
 
       <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
@@ -55,7 +47,47 @@
   </header>
 
   <main id="main-content">
-  	<!-- pitstop -->
+    <section class="section" id="blog-hero">
+      <div class="container section-intro">
+        <div>
+          <p class="section-label">Journal & Notes</p>
+          <h1>Articles & Working Memory</h1>
+        </div>
+        <p class="section-text">
+          A growing collection of reflections, technical notes, and essays across systems, networking, IoT, security, and sociology.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <p class="section-label">Categories</p>
+        <ul class="mini-list" role="list" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; list-style: none; padding: 0;">
+          <li><strong>systems</strong></li>
+          <li><strong>networking</strong></li>
+          <li><strong>embedded-iot</strong></li>
+          <li><strong>security</strong></li>
+          <li><strong>meta</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="posts-list">
+      <div class="container">
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <p class="pillar-number">June 2026</p>
+            <h3><a href="/content/who_are_we.html" style="text-decoration: underline; color: inherit;">Who Are We?</a></h3>
+            <p>
+              A reflection on the scientific and Qur’anic stories of human origins, and on how the question of where we come from turns into the question of what we are becoming.
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+              Category: <em>Beyond the herd</em>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- =========================================================
