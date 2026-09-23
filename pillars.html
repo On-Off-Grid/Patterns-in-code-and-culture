@@ -80,6 +80,9 @@
             This pillar follows my path through Tech/IT, AI, tools, experiments, and the gradual
             development of a systems mindset.
           </p>
+          <p style="margin-top: 1rem;">
+            <a href="/blog.html#student-to-systems">View Systems Notes →</a>
+          </p>
         </article>
 
         <article class="pillar-card">
@@ -88,6 +91,9 @@
           <p>
             This pillar connects agriculture, startup realities, and the future bridge between
             farming, data, and intelligent systems.
+          </p>
+          <p style="margin-top: 1rem;">
+            <a href="/blog.html#fields-to-models">View Farming & AI Notes →</a>
           </p>
         </article>
 
@@ -98,8 +104,8 @@
             This pillar holds reflections on sociology, psychology, social patterns, and the
             misconceptions people carry about technology and AI.
           </p>
-          <p>
-            <a href="./content/who_are_we.html">Read the first article</a>
+          <p style="margin-top: 1rem;">
+            <a href="/blog.html#beyond-the-herd">View Social Notes →</a>
           </p>
         </article>
 
@@ -109,6 +115,9 @@
           <p>
             This pillar acts as a reflective archive for unfinished thoughts, mindset shifts,
             observations, and lessons I want to preserve over time.
+          </p>
+          <p style="margin-top: 1rem;">
+            <a href="/blog.html#working-memory">View Working Memory Notes →</a>
           </p>
         </article>
       </div>
@@ -148,21 +157,32 @@
 
   <script>
     /*
-      SIMPLE THEME TOGGLE
-      - Uses an in-memory variable only.
-      - No localStorage, so it stays compatible in sandboxed environments.
+      PERSISTENT THEME TOGGLE
+      - Saves theme choice to localStorage so it persists across page navigations.
+      - Gracefully falls back if localStorage is restricted in sandboxed environments.
     */
     (function () {
       const root = document.documentElement;
       const toggle = document.querySelector('[data-theme-toggle]');
-      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+      let savedTheme = null;
+      try {
+        savedTheme = localStorage.getItem('theme');
+      } catch (e) {}
+
+      let theme = savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
       root.setAttribute('data-theme', theme);
 
-      toggle.addEventListener('click', function () {
-        theme = theme === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-theme', theme);
-      });
+      if (toggle) {
+        toggle.addEventListener('click', function () {
+          theme = theme === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', theme);
+          try {
+            localStorage.setItem('theme', theme);
+          } catch (e) {}
+        });
+      }
     }());
   </script>
 </body>
